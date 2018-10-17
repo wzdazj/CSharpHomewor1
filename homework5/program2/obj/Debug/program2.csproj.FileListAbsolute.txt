@@ -1,0 +1,10 @@
+C:\CSharpHomework\homework5\program2\bin\Debug\program2.exe.config
+C:\CSharpHomework\homework5\program2\bin\Debug\program2.exe
+C:\CSharpHomework\homework5\program2\bin\Debug\program2.pdb
+C:\CSharpHomework\homework5\program2\obj\Debug\program2.csprojAssemblyReference.cache
+C:\CSharpHomework\homework5\program2\obj\Debug\program2.Form1.resources
+C:\CSharpHomework\homework5\program2\obj\Debug\program2.Properties.Resources.resources
+C:\CSharpHomework\homework5\program2\obj\Debug\program2.csproj.GenerateResource.cache
+C:\CSharpHomework\homework5\program2\obj\Debug\program2.csproj.CoreCompileInputs.cache
+C:\CSharpHomework\homework5\program2\obj\Debug\program2.exe
+C:\CSharpHomework\homework5\program2\obj\Debug\program2.pdb
