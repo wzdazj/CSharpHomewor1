@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ArrayOfOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Order>
+    <OrderNum>201701</OrderNum>
+    <GoodName>牙刷2</GoodName>
+    <Client>小李</Client>
+  </Order>
+  <Order>
+    <OrderNum>201801</OrderNum>
+    <GoodName>灯泡</GoodName>
+    <Client>李明</Client>
+  </Order>
+</ArrayOfOrder>
