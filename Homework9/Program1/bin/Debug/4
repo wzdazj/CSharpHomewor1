@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html><html> <head> <meta http-equiv=Content-Type content="text/html;charset=utf-8"> <title>夏莫之莫的百度个人主页</title> <script>window.wpo={start:new Date*1,pid:109,page:'princess'}</script> <link type=text/css rel=stylesheet href="http://pr.bdimg.com/static/princess/css/princess_a18856d8.css"> <script>wpo.head=new Date*1;wpo.ready=function(a,b){b=b||document;if(/complete/.test(b.readyState)){a()}else{if(b.addEventListener){if("interactive"==b.readyState){a()}else{b.addEventListener("DOMContentLoaded",a,false)}}else{var c=function(){c=new Function;a()};void function(){try{b.body.doScroll("left")}catch(d){return setTimeout(arguments.callee,10)}c()}();b.attachEvent("onreadystatechange",function(){("complete"==b.readyState)&&c()})}}};wpo.load=function(b){if(window.addEventListener){window.addEventListener("load",b,false)}else{if(document.attachEvent){window.attachEvent("onload",b)}}};wpo.ready(function(){wpo.dom=new Date*1});wpo.load(function(){var a=wpo.load=new Date*1;setTimeout(function(){var d=["pid="+wpo.pid,"jsfileloaded="+(wpo.jsLoaded-wpo.start),"pageletsLoaded="+(wpo.allPageletLoad-wpo.start),"serverCost="+(wpo.serverEnd-wpo.serverStart),"head="+(wpo.head-wpo.start),"tti="+(wpo.tti-wpo.start),"dom="+(wpo.dom-wpo.start),"load="+(wpo.load-wpo.start),"page="+wpo.page,"r="+a],b="wpo_"+a,e=window[b]=new Image;e.onload=(e.onerror=function(){window[b]=null});e.src="http://nsclick.baidu.com/v.gif?type=2009&fn=wpo&"+d.join("&");e=null},0)});</script> </head> <body>  <div id=wrapper> <div class=bground> <div id=banner> <div class=banner-position><div id=banhld class=banner-content><div class=plzhld></div><a href=https://www.baidu.com/ target=_blank><img class=logo-img src="http://pr.bdimg.com/static/princess/img/misc/baidu_logo_c352a179.gif" alt=baidu.com></a></div></div> </div> <div id=head> <div id=headhld> <div class=plzhld></div></div> </div> <div id=content>  <div id=cnthld class="baike"> <ul class=content-tab> <li class=baidu-tab><a id=baidutab href="#" class="tab-title songti tabbtn" hidefocus data-click=baidu><span class=tab-title-tag>TA在</span>百度</a> <li class=tieba-tab><a id=tiebatab href="#" class="tab-title songti tabbtn" hidefocus data-click=tieba><span class=tab-title-tag>TA在</span>贴吧</a> <li class=zhidao-tab><a id=zhidaotab href="#" class="tab-title songti tabbtn" hidefocus data-click=zhidao><span class=tab-title-tag>TA在</span>知道</a>      <li class="baike-tab"><a id="baiketab" href="#" class="tab-title songti tabbtn" hidefocus data-click="baike"><span class=tab-title-tag>TA在</span>百科</a>       </ul> <div class="cnthld-main clearfix">  <div class=loadingtpl>LOADING...</div> <div class="col leftside"> <div class=plzhld data-fill=tab_content></div> <div class=plzhld data-fill=feed_content></div> <div class=leftside-shadow></div> </div> <div class="col rightside"> <div class="plzhld p1" data-fill=friend_content></div> </div> </div></div> </div> <div id=foot> <div class=mod-footer> <div class=bottom-line2> <p>使用百度服务前，请确保您已阅读并同意 <a target=_blank href=https://www.baidu.com/duty/yinsiquan.html>《百度隐私权保护声明》</a></p> <p>© Baidu <a target=_blank href="http://www.baidu.com/duty/">使用百度前必读</a> <a href=http://www.miibeian.gov.cn target=_blank>京ICP证030173号</a> <em class=s-bottom-copyright>&nbsp;&nbsp;&nbsp;&nbsp;</em></p> </div></div> </div> </div> <div class="mod-right-nav nav-narrow nav-normal" id=navhld><div class=plzhld></div></div><a class=mod-go-top-btn href="#" onclick="return false"></a> </div><div class=adv_wrapper> <p class=adv_left id=jinAdvWrapper> <span class=adv_jin_close id=jinClose></span> <a href=https://jin.baidu.com/insurance/apply?channel=bxpass target=new id=jinImgHerf> <img src="http://pr.bdimg.com/static/princess/img/adv_img/left_f2897383.png?cdnversion=1542807703" id=jinImg> </a> </p> <p class=adv_right id=creditcardAdvWrapper> <span class=adv_creditcard_close id=creditcardClose></span> <a href=https://xinyongka.baidu.com/static/life-h5/pcRights/index.html?p=0 target=new id=creditcardImgHerf> <img src="http://pr.bdimg.com/static/princess/img/adv_img/right_9a16ea35.png?cdnversion=1542807703" id=creditcardImg> </a> </p></div><script>wpo.tti=new Date*1;</script><script src="http://pr.bdimg.com/static/princess/js/index_boot_8a84c8f5.js"></script><script>
+    wpo.jsLoaded=new Date*1;
+    wpo.serverStart=parseInt("1542807703002.1");
+    F._fileMap({
+        'http://pr.bdimg.com/static/princess/js/tangram_move_6affa469.js':'tangram_move/tangram_move'
+    });
+    App.router.updateGlobal({'domain': {"portrait":"http:\/\/himg.bdimg.com","passport":"http:\/\/passport.baidu.com","passportSsl":"https:\/\/passport.baidu.com","www":"http:\/\/www.baidu.com","zhidao":"http:\/\/zhidao.baidu.com","tieba":"http:\/\/tieba.baidu.com","space":"http:\/\/hi.baidu.com","album":"http:\/\/hi.baidu.com","albumStatic":"http:\/\/hiphotos.baidu.com","static":"http:\/\/pr.bdimg.com","message":"http:\/\/msg.baidu.com"}});
+    App.router.updateGlobal({'token': ''});
+
+        F.use('products/main', function(prod){
+        prod.loadProductsData('baike', 'http:\/\/baike.baidu.com\/user\/phome?portrait=da9de5a48fe88eabe4b98be88eab0956&st=1&domain=http:\/\/www.baidu.com\/p').loadProductsData('reward', 'http:\/\/www.baidu.com\/ur\/show\/urprincessindex?portrait=da9de5a48fe88eabe4b98be88eab0956&domain=http%3A%2F%2Fwww.baidu.com%2Fp');
+    });
+                                        App.router.models['cnthld'].getData({tab: 'baike', part: 'index'});
+    
+
+function logImg(src){
+    var img = new Image()
+    img.onerror = img.onload = function(){
+        img = null
+    };
+    img.src = src;
+}
+
+function jinImgEvnet(){
+    var img = document.getElementById('jinImg');
+    if(img){
+      logImg("https://nsclick.baidu.com/v.gif?name=jinImgShow&pid=111&tt="+(new Date()).getTime())
+    }
+
+    var jinImgHerf = document.getElementById('jinImgHerf');
+    jinImgHerf.onclick = function(){
+      logImg("https://nsclick.baidu.com/v.gif?name=jinImgHerfClick&pid=111&tt="+(new Date()).getTime())
+    }
+
+    document.getElementById('jinClose').onclick = function(e){
+      if (document.all) {
+        event.returnValue = false;
+      } else {
+       e.preventDefault();
+      };
+      document.getElementById('jinAdvWrapper').style.display = 'none';
+      logImg("https://nsclick.baidu.com/v.gif?name=jinImgClose&pid=111&tt="+(new Date()).getTime())
+    }
+}
+
+function creditcardImgEvnet(){
+    var img = document.getElementById('creditcardImg');
+    if(img){
+      logImg("https://nsclick.baidu.com/v.gif?name=creditcardImgShow&pid=111&tt="+(new Date()).getTime())
+    }
+
+    var creditcardImgHerf = document.getElementById('creditcardImgHerf');
+    creditcardImgHerf.onclick = function(){
+      logImg("https://nsclick.baidu.com/v.gif?name=creditcardImgHerfClick&pid=111&tt="+(new Date()).getTime())
+    }
+
+    document.getElementById('creditcardClose').onclick = function(e){
+      if (document.all) {
+        event.returnValue = false;
+      } else {
+       e.preventDefault();
+      };
+      document.getElementById('creditcardAdvWrapper').style.display = 'none';
+      logImg("https://nsclick.baidu.com/v.gif?name=creditcardClose&pid=111&tt="+(new Date()).getTime())
+    }
+}
+
+window.onload = function(){
+    jinImgEvnet();
+    creditcardImgEvnet();
+}
+
+</script><script>
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ff4165db5a1ac36eadcfa02a10a6bd243' type='text/javascript'%3E%3C/script%3E"));
+</script> <script>
+    App.onPageletArrive({"targetId":"headhld", "tplContent":"<div class=mod-head>     <div class=\x22info-left  user-online\x22> <div class=portrait><img class=portrait-img src=\x22http:\/\/himg.bdimg.com\/sys\/portrait\/item\/da9de5a48fe88eabe4b98be88eab0956.jpg?cdnversion=4143\x22><span><\/span> <\/div> <span class=picicon><\/span> <\/div> <div class=info-right> <div class=\x22user-name clearfix\x22> <h2 class=yahei>夏莫之莫<\/h2>    <a href=\x22\/p\/sys\/redirect?login=1&uname=%E5%A4%8F%E8%8E%AB%E4%B9%8B%E8%8E%AB\x22 class=btn-message hidefocus><\/a>   <\/div> <div class=\x22user-info clearfix\x22>    <div class=info>男<\/div>      <\/div> <p class=personal-url> <span class=url-desc>个人网址：www.baidu.com\/p\/夏莫之莫<\/span> <a class=detail-link href=\x22\/p\/夏莫之莫\/detail\x22 target=_blank class=songti>查看更多资料&gt;&gt;<\/a> <\/p>  <\/div><\/div>", "viewType": "Generic",
+        "options": {
+            init: function () {
+                var page_userInfo = {
+                    'username' : '夏莫之莫',
+                    'portrait' : 'da9de5a48fe88eabe4b98be88eab0956',
+                    'sexTitle' : '他',
+                    'username_gbk_path' : '%CF%C4%C4%AA%D6%AE%C4%AA'
+                };
+                this.router.updateGlobal({ 'page_userInfo': page_userInfo });
+                this.router.updateCurrentUserData({"userInfo":{"username":'夏莫之莫', "portrait": 'da9de5a48fe88eabe4b98be88eab0956', "gender": '他'}});
+            }
+        }
+    });
+</script><script>
+    App.onPageletArrive({"targetId":"banhld", "viewType": "Userpanel", "tplContent":"<div id=pUserPanel class=mod-banner> <a href=\x22\/p\/sys\/redirect?login=1&uname=%E5%A4%8F%E8%8E%AB%E4%B9%8B%E8%8E%AB\x22 class=log-lgin>登录<\/a>|<a href=\x22http:\/\/www.baidu.com\x22 class=log-baidu-homepage>百度首页<\/a> <\/div>", "options":{
+    	"init" : function(){
+    		this.router.updateGlobal({'isLoginUserNoName' : false,
+            'isLoggedIn': false});
+            if(this.router.updateLoginUserData){
+                this.router.updateLoginUserData({"userInfo":{"isLoggedIn":false, "username": "", "isLoginUserNoName": false, "token": '', "portrait": ""}});
+            };
+            this.router.updateGlobal({'login_userInfo':{
+            	portrait : '',
+                uname : ''
+            }});
+    	}
+    }});
+</script><script>
+    App.onPageletArrive({"targetId":"navhld",
+        "viewType": "RightNav",
+        "tplContent":"  <div class=right-nav-issues> <span class=question-mark><\/span> <a href=http:\/\/qingting.baidu.com\/index?pid=17 class=issues target=_blank>意见反馈<\/a> <\/div>"});
+</script><script>
+    F.use("skinchange/skinchange",function (skinchange) {
+        skinchange.init();
+        skinchange.setSkin('9'|0);
+    });
+</script>

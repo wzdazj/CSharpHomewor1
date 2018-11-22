@@ -1,0 +1,7 @@
+G:\SourceCode\C#File\Homework9\Program1\bin\Debug\Program1.exe.config
+G:\SourceCode\C#File\Homework9\Program1\bin\Debug\Program1.exe
+G:\SourceCode\C#File\Homework9\Program1\bin\Debug\Program1.pdb
+G:\SourceCode\C#File\Homework9\Program1\obj\Debug\Program1.csprojAssemblyReference.cache
+G:\SourceCode\C#File\Homework9\Program1\obj\Debug\Program1.csproj.CoreCompileInputs.cache
+G:\SourceCode\C#File\Homework9\Program1\obj\Debug\Program1.exe
+G:\SourceCode\C#File\Homework9\Program1\obj\Debug\Program1.pdb

@@ -1,0 +1,840 @@
+﻿<html>
+	<head>
+		<title>《文科计算机基础(上）》教学进度安排</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+		<meta content="Microsoft FrontPage 4.0" name="GENERATOR">
+		<meta content="FrontPage.Editor.Document" name="ProgId">
+		<base target="_blank">
+		<script src="jquery-1.4.2.min.js"></script>
+		<style> .nodisplay a { display:none;}
+	.nodisplay ul { display:none;}
+	</style>
+		<script>
+function fun(){
+	//var w= window.open("about:blank","notice","HEIGHT=200,WIDTH=200" );
+	//w.document.write("通知：XX月XX日的计算机课不讲课，同学们自学、复习。但本周照常上机。请同学们互相转告。");
+}
+var x = new Array();
+var i = 0;
+//x[i++] = new Date("2007/09/05") //week 0
+x[i++] = new Date("2007/09/10") 
+x[i++] = new Date("2007/09/17")    
+x[i++] = new Date("2007/09/24")
+x[i++] = new Date("2007/10/01")
+x[i++] = new Date("2007/10/08")
+x[i++] = new Date("2007/10/15")
+x[i++] = new Date("2007/10/22")
+x[i++] = new Date("2007/10/29")
+x[i++] = new Date("2007/11/05")
+x[i++] = new Date("2007/11/12")
+x[i++] = new Date("2007/11/19")
+x[i++] = new Date("2007/11/27")
+x[i++] = new Date("2007/12/03")
+x[i++] = new Date("2007/12/10")
+x[i++] = new Date("2007/12/17")
+x[i++] = new Date("2007/12/24")
+x[i++] = new Date("2007/12/31")
+x[i++] = new Date("2006/01/07")
+
+function whichweek()
+{
+	var now = new Date();
+	//now = new Date("2005/12/24")
+	for( i=0; i<x.length-1; i++ )
+		if( now>=x[i] && now<x[i+1]) return i;
+	return 0;
+}
+
+function scrol(lnk){
+	var w = whichweek();
+	if( w>0 ) w--;
+	lnk.href="#w" + w;
+	return false;
+}
+
+function openlink(lnk, w)
+{
+	return true;
+	if( w <= whichweek() )return true; 
+	lnk.href="#";
+	alert("Sorry,文件暂时无法打开。因为只能打开本周的媒体文件。")
+	return false;
+}
+
+function wk(){
+	var now = new Date();
+	//alert(now);
+	var first = new Date(2012,8,3); //注意月份
+	//alert(first);
+	return parseInt((now-first)/24/3600/1000/7);	
+}
+
+$(function(){
+
+	var w = wk();
+	var a=$("a");
+	a.each(function(){ 
+		var name=$(this).attr("name");
+		
+		if(name.substring(0,1)!="w") return;
+		
+		var idx = parseInt(name.substring(1));
+		//alert(idx);
+		if( idx<=w) return;
+		
+		var td = $(this).parent().next().next().next();
+		//alert(td.html());
+		//alert(tr.html());//filter("td:first-child")
+		//td.css("class","nodisplay");
+		td.html("&nbsp;");
+	});
+
+});
+		</script>
+	</head>
+	<body>
+		<script>
+	//alert("1月6日下午2:00-4:00，在理科一号楼2层 1223室 答疑");
+	//alert("提示：负责cf1, cf2, cf7的助教老师有所调整，以网站上的为准。分班情况不变。");
+		</script>
+		<a href="http://cf.pku.cn/tds/csharp"><font size="-1">附链接：C#程序设计课程网站 
+				http://cf.pku.cn/tds/csharp</font></a>
+		<center><a name="w0"></a>
+			<p><br>
+				<b>《文科计算机基础(上）》教学进度安排</b>
+				<br>
+				<font size="-1"><a href="http://cf.pku.cn/tds"><b>网址 http://cf.pku.cn/tds</b></a> 备份
+					<a href="http://www.dstang.com/cf1">http://www.dstang.com/cf1</a></font>
+			</p>
+			<a name="teacher"></a>
+			<div style="FONT-SIZE: 10pt"><font size="-1">主讲教师：唐大仕&nbsp;&nbsp; <A href="mailto:dstang2000@263.net">
+						dstang2000@263.net</A></font><!--&nbsp; QQ:351116463-->
+				<BR>
+				</FONT>
+				<BR>
+				<p><font size="-1">辅导教师： 程超 <A href="mailto:iclumsy@gmail.com">iclumsy@gmail.com</A> <!--ftp://cf1:cf1@cf.pku.cn-->
+						<br>
+						纪晓康 <A href="mailto:jxk701@gmail.com">jxk701@gmail.com</A> <!--ftp://cf2:cf2@cf.pku.cn-->
+						<br>
+						斯文骏 <A href="mailto:swj0066@gmail.com">swj0066@gmail.com</A> <!--ftp://cf7:cf7@cf.pku.cn -->
+						<!--
+							涂锦辉 <A href="mailto:jinhuitu@gmail.com">jinhuitu@gmail.com</A> 
+							&nbsp; <A HREF="ftp://cf1:cf1@cf.pku.cn">ftp://cf1:cf1@cf.pku.cn</A>
+							<br>
+							刘光磊 <A href="mailto:pigscanfly@163.com">pigscanfly@163.com</A> &nbsp; <A HREF="ftp://cf2:cf2@cf.pku.cn">
+								ftp://cf2:cf2@cf.pku.cn</A>
+							<br>
+							谢水源 <A href="mailto:xsy2510@gmail.com">xsy2510@gmail.com</A> &nbsp; <A HREF="ftp://cf7:cf7@cf.pku.cn">
+								ftp://cf7:cf7@cf.pku.cn</A>
+						-->
+						<br>
+						<br>
+					</font> <!--a href="mingdan.xls">名单及机位分配</a-->
+				<P>主要参考书：《计算机应用教程》卢湘鸿主编，清华大学出版社<br>
+					《大学计算机应用基础》谢柏青主编，北京大学出版社<br>
+				New Perspectives on Computer Concepts(《计算机文化》), 8th Edition)June J. Parsons, 
+				Dan Oja，机械工业出版社
+				<p><font color="red">作业提交:</font><a href="http://wjtds.vicp.cc">点这里</a>   <a href="WJ_CLASS2.xlsx"> 分班情况</a>
+				<!--<A href="../zj/zj3/homework.htm">cf3</A>&nbsp;&nbsp;
+					<A href="../zj/zj4/homework.htm">cf4</A>&nbsp;&nbsp; <A href="../zj/zj5/homework.htm">
+						cf5</A>&nbsp;&nbsp; &nbsp;<A href="HomeworkSubmit.htm">作业提交方法</A>-->
+				<P>
+				<!--QQ群：48584606（优先）及 8806100 -->
+				<p><!--<A href="cf_all.zip">下载所有讲义</A>&nbsp;&nbsp;--> <!--A onclick="scrol(this)" href="#" target="_self"><font color="red">本周的内容! 
+									new </font></A-->
+					<!--<font color="red"> 所有作业的最后期限为12月28日晚上。请每个同学检查自己的作业是否提交。</font>--></p>
+			</div>
+			<P></P>
+			<br>
+			<P>
+				<table style="FONT-SIZE: 10pt;BORDER-COLLAPSE: collapse" width="100%" border="1">
+					<tr>
+						<td width="27">周次</td>
+						<td width="44">日期</td>
+						<td width="245" colSpan="1" rowSpan="1">&nbsp;讲课ppt下载</td>
+						<TD width="342" colSpan="1" rowSpan="1">媒体/资料/示例</TD>
+						<td width="404">上机实习内容、需要提交的作业&nbsp;</td>
+						<td width="587">课外阅读或实践</td>
+					</tr>
+					<tr>
+						<td width="27">&nbsp;0</td>
+						<td width="44"></td>
+						<td width="245"><A href="1.ppt"></A></td>
+						<TD width="342">
+						</TD>
+						<td width="404">&nbsp;</td>
+						<td width="587">
+							<P>&nbsp;</P>
+						</td>
+					</tr>
+					<tr>
+						<td width="27">1&nbsp;<a name="w1"></a></td>
+						<td width="44">9.11&nbsp;</td>
+						<td width="245">
+							<P><A href="1_2.ppt">序论及<br>
+									使用微机&nbsp;</A></P>
+						</td>
+						<TD width="342">
+							<ul>
+								<li>
+									<A onclick="return openlink(this,1)" href="Media\1_history_f0300_.avi">计算机的历史</A>
+								<LI>
+									<A onclick="return openlink(this,1)" href="Media\_computer_f0100a_.avi">计算机外观</A>
+								<LI>
+									<A href="ZiLiao\计算机安全与舒适操作.pdf">舒适操作</A>&nbsp;
+								<!--
+								<li>
+									<A onclick="return openlink(this,1)" href="Media_mouse_GUI\284.avi">窗口的打开与关闭</A>
+								<li>
+									<A onclick="return openlink(this,1)" href="Media_mouse_GUI\285.avi">改变窗口的大小</A>
+								<li>
+									<A onclick="return openlink(this,1)" href="Media_mouse_GUI\286.avi">窗口的滚动条</A>
+								<li>
+									<A onclick="return openlink(this,1)" href="Media_mouse_GUI\287.avi">移动窗口位置</A>
+								<li>
+									<A onclick="return openlink(this,1)" href="Media_mouse_GUI\288.avi">任务栏与活动窗口</A>
+								<li>
+									<A onclick="return openlink(this,1)" href="Media_mouse_GUI\289.avi">拖动对象</A>
+								<li>
+									<A onclick="return openlink(this,1)" href="Media_mouse_GUI\290.avi">查找文件</A>
+								<li>
+									<A onclick="return openlink(this,1)" href="Media_mouse_GUI\291.avi">剪切与粘贴</A>
+								<li>
+									<A onclick="return openlink(this,1)" href="Media_mouse_GUI\292.avi">启动程序</A>
+								<li>
+									<A onclick="return openlink(this,1)" href="Media_mouse_GUI\290.avi">选择对象</A>
+									<br>
+								&nbsp;
+								-->
+								<li>
+									<a href="http://v.youku.com/v_show/id_XMTE5NjcyMzI4.html">多点触摸的应用(link)</a>
+								<li>
+									<a href="http://you.video.sina.com.cn/b/15202124-1390255024.html">If I have a magic 
+										phone (link)</a>
+								</li>
+							</ul>
+						</TD>
+						<td width="404">&nbsp;</td>
+						<td width="587">
+							<P>卢0.1-0.3<BR>
+								谢 谢1.1-1.5
+								<BR>
+								（注：“卢0.1-0.3”表示卢湘鸿主编的书中的第0章第1节到第3节，以下类似）<BR>
+								（（“谢”表示谢柏青主编的书。)</P>
+							<P>（卢、谢选择一本即可，以下同）</P>
+							<P>从图书馆或网上了解计算机的历史、了解比尔·盖茨的传奇故事</P>
+							<P>卢2.3-2.9，3.1，3.2，3.6，3.7<br>
+								谢3.5</P>
+							<P>总结一下Windows操作的基本规律</P>
+							<P>了解各种键盘及非键盘输入方法</P>
+							<P>如果你不熟悉打字，一定要找课外时间多练习。&nbsp;</P>
+						</td>
+					</tr>
+					<tr>
+						<td width="27">2&nbsp;<a name="w2"></a></td>
+						<td width="44">9.18&nbsp;</td>
+						<td width="245"><U><FONT color="#0000ff">使用</FONT></U><A href="3.ppt">网络</A>&nbsp;</td>
+						<TD width="342">
+							<ul>
+								<li>
+									<A onclick="return openlink(this,3)" href="ZiLiao\rfc1945_http1.0.txt">HTTP协议</A>
+								<li>
+									<A onclick="return openlink(this,3)" href="Media\_network_f0700.avi">计算机网络</A>
+								<li>
+									<A onclick="return openlink(this,3)" href="Media\_internet_f0800.avi">Internet</A>
+								<li>
+									<a href="http://pan.baidu.com/share/link?shareid=2633261706&uk=2301926710">BBC纪录片《虚拟革命》(link)</a>(感谢斯文骏助教的推荐)
+								<li>
+									<a href="../video/bbc01.flv">《虚拟革命01-大平台》</a> <a href="../video/bbc01.srt">字幕</a>
+								<li>
+									<a href="../video/bbc02.flv">《虚拟革命02-国家的敌人》</a> <a href="../video/bbc02.srt">字幕</a>
+								<li>
+									<a href="../video/bbc03.flv">《虚拟革命03-免费的代价》</a> <a href="../video/bbc03.srt">字幕</a>
+								<li>
+									<a href="../video/bbc04.flv">《虚拟革命04-人类网络》</a> <a href="../video/bbc04.srt">字幕</a>
+								</li>
+							</ul>
+						</TD>
+						<td width="404">
+							<ul>
+								<li>
+								补前次上机应该完成的练习：
+								<LI>
+									练习中英文打字（可自由练习，也可以安装<A href="software\ccitinst.exe">ccit2000软件</A>并使用)
+								<LI>
+								练习微机的基本使用：开机与关机，图形界面，对象及其操作，复制及粘贴
+								<LI>
+								使用计算器,使用画图程序,使用写字板
+								<LI>
+								在写书板与画图之间互相复制粘贴信息
+								<LI>
+								练习网络的基本使用 ：网络浏览（具体的地址请参看讲义，或者进入北大主页)
+								<LI>
+								练习使用搜索引擎查找信息，如“比尔·盖茨”
+								<LI>
+								练习使用电子邮件(如果没有电子信箱需要申请一个，然后给自己发一封email)
+								<LI>
+									练习使用文件传输(请下载一个文件并打开，具体的地址请参看讲义)</LI>
+							</ul>
+						</td>
+						<td width="587">
+							<P>卢10.1-10.6<br>
+								谢4.1-4.2</P>
+							<P>到图书馆网页上查一下你感兴趣的某方面的书有多少。</P>
+							<P>
+								搜索信息，看关于第一台电子计算机是谁发明的争论</P>
+						</td>
+					</tr>
+					<TR>
+						<TD width="27">3<a name="w3"></a></TD>
+						<TD width="44">9.25</TD>
+						<TD width="245"><A href="net.ppt">再谈网络的使用</A></TD>
+						<TD width="342"></TD>
+						<TD width="404">
+							<UL>
+								<LI>
+								传统的网络应用&nbsp;
+								<LI>
+								新型的网络应用&nbsp;
+								<LI>
+								网络文化
+								<LI>
+									<B><FONT color="red">要提交的作业-1:</FONT></B> 将<A href="xiti\start01.jpg" target="_blank">start01.jpg</A>
+									复制一份到自己的目录下，<B>文件名为:本人学号-姓名(如 00549001-李明)</B>，扩展名不变（文件名不能写错，否则无分数）。利用“画图”对该图形进行修改，使用复制、变形等方法，做出一个图形，可以类似于图"<A href="xiti\end01.jpg" target="_blank">end01.jpg</A>"的形状（答案不是唯一的，要求发挥你的创意）。在图上的空白处写上自己的系别，学号和姓名。并提交作业。如果你的机器上不能用“画图”打开.jpg格式的文件，可以用浏览器打开这两个文件，用PrtScr的方法将图形复制到“画图”中，在保存时可以存为.bmp格式，但请用256色位图格式保存）。 
+								作业提交方法见页顶。 
+								如果有关于作业的说明，可以建一个文件叫Readme。其他问题请与唐老师及助教老师用email等方式联系。
+								<LI>
+								</LI>
+							</UL>
+						</TD>
+						<TD width="587">
+							<P>
+							从北大主页上的“网络服务”进去，再点其中的“网络服务”，仔细阅读其中的各项内容。
+							<P>利用搜索引擎查找一下你感兴趣的有关<b>网络应用</b>的知识，并用Word文档记下来，保存到自己的U盘中，或发送到自己的邮件中。这方面的信息以后可以用到你的其他作业中。</P>
+						</TD>
+					</TR>
+					<tr>
+						<td width="27">&nbsp;&nbsp;<a name="w5"></a></td>
+						<td width="44">
+							<P>&nbsp;</P>
+						</td>
+						<td width="245">&nbsp;</td>
+						<TD width="342">
+						</TD>
+						<td width="404">
+							<P><B><FONT color="red">关于网络的兴趣小组:</FONT></B>,在网络上搜集资料，查询一些读物，或者结合你的实际经验，选择一个关于网络应用方面的话题进行较深入的讨论，写出相应的文章，做出相应的ppt。以下是一些选题，但不限于此：<BR>
+								介绍历史事件（如博客、微博的产生、发展），讨论网络未来的发展(如SoLoMo等)<BR>
+								介绍技术原理（如P2P、qq等)，使用技巧、使用经验<BR>
+								介绍搜索的高级使用技巧<BR>
+								介绍新型网络的应用方式<BR>
+								介绍网络用语的发展演变<BR>
+								介绍移动应用（手机应用）<BR>
+								介绍网络安全、人肉搜索、隐私保护、网络炒作、信息真假、防欺骗的相关问题<BR>
+								等等。</P>
+							<P><B><FONT color="red">关于计算机应用的兴趣小组:</FONT></B>,完成作品或研究文章，选题 可以是以下某一方面：
+							<br>软件的用户界面及操作模式的研究
+							<br>ppt或其他演示文稿软件(如Prezi,KeyNotes等)的应用
+							<br>excel应用（可包括vba)
+							<br>编写程序软件
+							<br>
+							</P>
+								要求如下：
+							<UL>
+								<LI>
+								1.主题明确 （可参考课上讲的内容，也可以自定）
+								<LI>
+								2.内容丰富 （要求有一定的深度,摆事实、讲道理、提方案等方式）
+								<LI>
+									3.要求注明资料来源（参考的网址)
+								<LI>
+									4.可以1到4人组成一个小组，要写明分工的情况。
+								</LI></UL>
+									小组确定后，将选题、主要设想、研究重点内容、进度计划、人员分工等信息发邮件给唐老师dstang2000@263.net，必要时可以到老师办公室（理一1223）讨论。最近两周内确定选题，两个月以内完成。
+						</td>
+						<td width="587">
+
+						</td>
+					</tr>
+					<tr bgColor="#ffdfdf">
+						<td width="27">4<a name="w4"></a></td>
+						<td width="44">国庆节</td>
+						<td width="245"></td>
+						<TD width="342"></TD>
+						<td width="404"></td>
+						<td width="587"></td>
+					</tr>
+					<tr>
+						<td width="27" height="25">&nbsp;5</td>
+						<td width="44" height="25">
+							<P>10.9</P>
+						</td>
+						<td width="245" height="25"><A href="4.ppt">硬件系统</A>&nbsp;</td>
+						<TD width="342" height="25">
+							<P>(以下视频为网上收集，版权归原作者)
+							</P>
+							<UL>
+								<LI>
+									<A onclick="return openlink(this,3)" href="Media\_hardware_f0500.avi">机器内部结构</A>
+								<LI>
+									<A onclick="return openlink(this,3)" href="Media\_harddisk_f0424_.avi">硬盘</A>
+								<LI>
+									<A onclick="return openlink(this,3)" href="Media\_printer_f0613.avi">打印机</A>
+								<LI>
+									<A onclick="return openlink(this,3)" href="Media\_buy_computer_f0600.avi">购买计算机</A>
+								</LI>
+							</UL>
+							<ul>
+								<li>
+									<A onclick="" href="Media2\1.rm">1 国外半导体工艺生产线视频.rm</A>
+								<li>
+									<A onclick="" href="Media2\2.rm">2 半导体制造工艺.rm</A>
+								<li>
+									<A onclick="" href="Media2\3.wmv">3 识别板卡元器件.wmv</A>
+								<li>
+									<A onclick="" href="Media2\4.wmv">4 电脑装机全过程.wmv</A>
+								<li>
+									<A onclick="" href="Media2\5.rmvb">5 电脑硬件组装完全DIY手册.rmvb</A>
+								<li>
+									<A onclick="" href="Media2\02.rm">第02讲 主板.rm</A>
+								<li>
+									<A onclick="" href="Media2\03.rm">第03讲 中央处理器和内存.rm</A>
+								<li>
+									<A onclick="" href="Media2\04.rm">第04讲 适配卡和驱动器.rm</A>
+								<li>
+									<A onclick="" href="Media2\05.rm">第05讲 主机部件装卸要点（一）.rm</A>
+								<li>
+									<A onclick="" href="Media2\06.rm">第06讲 主机部件装卸要点（二）.rm</A>
+								</li>
+							</ul>
+							<!--ul>
+								<li>
+									<a href="http://video.sina.com.cn/v/b/59521740-1776771503.html#59521740">乔布斯2005在Stanford的演讲(link)</a></li>
+							</ul-->
+						</TD>
+						<td width="404" height="25">
+							<P>&nbsp;</P>
+							<UL>
+								<LI>
+								了解计算机的硬件的基本组成
+								<LI>
+								了解CPU、内存、主板、硬盘、软驱、光驱、声卡、显卡、监视器、打印机、扫描仪、 网卡等设备的工作原理、性能指标、并从网上了解当前市面上流行的品牌与价格
+								<LI>
+									<B><FONT color="red">要提交的作业-2:</FONT></B> 根据网上的信息，如果要为你或你的朋友选购一台实用的计算机，你选择什么样的计算机，指出其品牌（如果是要组装也可考虑），详细列出出其软硬件配置（性能指标）、价格、服务、网评等。并写明其实用性及选购理由（如用途、性价比、与相似产品的比较等）。对于其中技术指标所涉及的专业术语要求有解释说明。将你的结果保存在Word文档中并提交。&nbsp;</LI></UL>
+							<P>&nbsp;</P>
+						</td>
+						<td width="587" height="25">
+							<P>卢1.1-1.2</P>
+							<P>谢2.4</P>
+							<P>到电子市场（如中海、太平洋、硅谷、海龙）去看一看，了解计算机硬件及计算机市场（<B><FONT color="red">强烈建议</FONT></B>每位同学都要抽时间去！）</P>
+						</td>
+					</tr>
+					<tr>
+						<td width="27">6&nbsp;<a name="w7"></a></td>
+						<td width="44">10.16&nbsp;</td>
+						<td width="245"><A href="Word.ppt">文字处理软件</A></td>
+						<TD width="342">
+							<ul>
+								<li>
+									<A href="ShiLi-word-1">一组文档素材</A>
+								<li>
+									<A href="ShiLi-word-2">一组小巧、活泼、悦目的文档示例</A>
+								<li>
+									<A href="ShiLi-word-3">一组长文档示例</A>
+								<li>
+									<A href="ShiLi-word-4">观摩：师兄师姐作业示例（有的好，有的不够好，仅供参考）</A>
+								<li>
+									<A href="ShiLi-word-1/国家行政机关公文格式.htm">国家行政机关公文格式</A>
+								<LI>
+									<A href="ZiLiao\Office2003_2007menu.rar">2003与2007<FONT color="#ff0066">菜单对照表</FONT></A>&nbsp;
+								<LI>
+									<A href="ZiLiao\ClassicMenu4OFFICE2007.rar"><FONT color="#ff0066">2007中显示菜单</FONT></A>(仅供学习用)</LI>
+							</ul>
+						</TD>
+						<td width="404">比照今天的<a href="word.ppt">讲义</a>（见左边的ppt文件),练习文字处理软件关于文件/界面/文字/格式等方面的操作
+							<P>&nbsp;<STRONG><FONT color="#ff0000">要提交的作业-3:</FONT></STRONG> 针对<a href="XiTi\MovieHistory.doc">素材文件</a>按<A href="XiTi\word0.txt">此要求进行操作</A>
+							</P>
+						</td>
+						<td width="587">
+							<P>卢4.1-4.9</P>
+							<P>谢5.1-5.8</P>
+						</td>
+					</tr>
+					<tr>
+						<td width="27">&nbsp;7</td>
+						<td width="44">10.23</td>
+						<td width="245">(同上)<A href="word.ppt">加了菜单的说明</A></td>
+						<TD width="342">
+							<ul>
+								<a href="ShiLi-word-4\reg_word.rar">通配符替换示例</a>(new!!!)
+							</ul>
+						</TD>
+						<td width="404">练习文字处理软件关于图/表等方面的操作
+							<P><B><FONT color="red">要提交的作业-4:</FONT></B>制作一个Word文档（<FONT color="#ff0066">可以在你的第2次的作业的基础上进行修改，也可以用其他内容进行修改</FONT>
+								）,<strong>一定要认真做，可以到下周才交</strong>
+								<UL>
+									<LI>
+										主题明确" （<A href="XiTi\WordHuaTi.txt">可参见此</A>，但不止于此）&nbsp;
+									<LI>
+									内容丰富 （就话题进行较深入介绍）
+									<LI>
+									美观，内容与形式相统一
+									<LI>
+									有风格、有创意（关键!抄袭者无分）
+									<LI>
+										文章要有多页,含有文/图/表等多种要素； <strong>要求含有以下60项中的至少40项（并用脚注或批注或附录说明你采用的手段)</strong>：特殊符号、特殊字体表示的符号、中英文字体设置、字符修饰（如特殊效果、字符间距）、文字边框、底纹、段落对齐方式、行间距、段前段后间隔、段落边框、首字下沉、分栏、页面设置、纸张大小、页边距、页眉、页脚、分页符、页码（第x页共x页）、分节符、不同节使用不同页眉、表格插入、文本转表格、边框设置、合并单元格、表格斜线、表格底纹、表格内容上下居中、表格标题行、图形对象、边线及填充、阴影与三维、旋转、编辑顶点、叠放次序、组合及取消组合、图片、剪贴画、艺术字、SmartArt、公式、组织结构图、图表、声音、视频、样式、大纲级别、自动编号、脚注、尾注、题注、索引、目录、批注、修订、文件属性（标题、关键词、作者）。<strong>同时要求对照讲义ppt</strong>(从左边的链接下载）练习“定位、选定、查找、替换、通配符、内部剪贴板、设置自动更正选项、中文繁简转换、拼写检查、打印预览、录制宏”等操作。
+									<LI>
+									可将多媒体内容加入（但文件最好不超过2M）
+									<LI>
+									练习文字处理软件关于长文档/样式/宏等方面的操作,并继续做上次的作业
+									<LI>
+									作业的首页务必写上"系别、姓名、学号",文件名的要求同以前（本次作业占两次平时作业的分数，请务必认真）
+									<LI>
+									</LI>
+								</UL>
+							<P>了解网络上的电子文档的各种形式（见讲义）</P>
+						</td>
+						<td width="587"></td>
+					</tr>
+					<tr>
+						<td width="27">8&nbsp;<a name="w9"></a></td>
+						<td width="44">10.30</td>
+						<td width="245"><A href="ppt.ppt">演示文稿软件&nbsp;</A></td>
+						<TD width="342">
+							<ul>
+								<li>
+									<A href="ShiLi-ppt">一组示例</A>
+								<li>
+									<A href="ShiLi-ppt2">一组示例(new)</A>
+								<li>
+									<A href="ShiLi-ppt3">一组示例</A>
+								<li>
+									<A href="ShiLi-ppt4">一组素材及ppt制作方法</A>
+								<li>
+									<A href="ZiLiao\实验-演示文稿.pdf">一个实验的说明</A>
+								<li>
+									<A href="http://url.cn/3R2bSu?type=1&amp;from=19&amp;u=dstang2000&amp;s=&amp;f=1&amp;skey=">
+										《如何成为一个优秀的演讲家》(link)</A><br>
+									<A href="http://t.qq.com/kaifulee">李开复的微博(link)</A></li>
+							</ul>
+						</TD>
+						<td width="404">
+							<p>上周作业没交的，请这周交</p>
+							<P>&nbsp;练习PowerPoint软件,比照讲义,练习关于视图/模板/文字/等方面的操作</P>
+							<P><STRONG><FONT color="#ff0000">要提交的作业-5:</FONT> 近两周内(可以到下周才交),</STRONG>制作一个ppt文档,内容自己确定，要求主题明确，内容丰富，表现方式适当。如果用网上的材料，要求注明出处，并要经过自己的综合、整理，不能完全照抄。下次课即希望讲的同学，请在本周日前先email发给唐老师看一下，并注明希望讲）。</STRONG>(注意：上台讲是讲你ppt的内容，主要不是讲怎样做出来的。时间有限，每人只有5-7分钟,请不要有太多的内容）。</P>
+						</td>
+						<td width="587">
+							<P>卢7.1-7.4</P>
+							<P>谢5.9</P>
+						</td>
+					</tr>
+					<tr>
+						<td width="27">&nbsp;9</td>
+						<td width="44">11.6&nbsp;</td>
+						<td width="245">
+							<P>(同上)</P>
+							<P><A href="ppt.ppt">演示文稿软件&nbsp;</A></P>
+						</td>
+						<TD width="342">
+							<ul>
+							</ul>
+						</TD>
+						<td width="404">
+							<P>练习PowerPoint软件,比照讲义,练习关于图形/声音/动态效果等方面的操作</P>
+							<P>若以前的作业未提交，请提交<BR>
+							<P>并请向唐老师（<A href="mailto:dstang2000@263.net">dstang2000@263.net</A>)<FONT color="red">发一封Email</FONT>谈谈你对本课程的要求、意见、建议。
+							</P>
+							<P></P>
+						</td>
+						<td width="587">(同上)</td>
+					</tr>
+					<tr>
+						<td width="27">&nbsp;10</td>
+						<td width="44">11.13</td>
+						<td width="245"><A href="excel.ppt">电子表格<font color="red">（有更新哟）</font></A><A href="html.ppt"></A></td>
+						<TD width="342">&nbsp;
+							<ul>
+								<LI>
+									<A href="ShiLi-Excel">一组示例(new)</A>
+								<LI>
+									<A href="excel_formula_example.xls"><font color="red">课上所讲的公式示例(好好学哟）</font></A>
+								</LI>
+							</ul>
+						</TD>
+						<td width="404">
+							<P>比照讲义及示例，学习Excel相关知识。</P>
+							<P><FONT color="#ff0000"><STRONG>要提交的作业-6: </STRONG></FONT><FONT color="#000000">自己确定一个主题制作一个Excel文件，有两至三个sheet，录入一些数据，并在其中体现：数据类型、重复或有规律的填充、条件格式、窗口拆分与冻结、公式（绝对引用与相对引用）、常用函数（如求和、平均值、最大值等）、图表等要素，最好也能体现排序、筛选、分类汇总等功能。<STRONG>(可下周提交）。</STRONG></FONT></P>
+						</td>
+						<td width="587">卢11.1-11.7<br>
+							谢6.1-6.6</td>
+					</tr>
+					<tr>
+						<td width="27">11&nbsp;<a name="w14"></a></td>
+						<td width="44">11.20</td>
+						<td width="245">同上</td>
+						<TD width="342">
+							<ul>
+							</ul>
+						</TD>
+						<td width="404">
+							&nbsp;
+						</td>
+						<td width="587">卢6.1-6.9</td>
+					<tr>
+					<tr>
+						<td width="27">12&nbsp;<a name="w11"></a></td>
+						<td width="44">11.27&nbsp;</td>
+						<td width="245"><A href="soft.ppt">操作系统、数据库</A> &nbsp;</td>
+						<TD width="342">
+							<ul>
+								<li>
+									<A href="Media\_software_f0200.avi">计算机软件</A>
+								<li>
+									<A href="Media\_Software_Install_F0237.avi">软件的安装</A>
+								<li>
+									<A href="Media\_storage_f0400.avi">文件及其存储&nbsp;</A>
+								<li>
+									<A href="CPU.ppt">指令的执行过程(new!!!)</A>
+								<li>
+									<A href="Screen-ppt">一组ppt操作屏幕录像(new!!!)</A>
+								<li>
+									往届几份<a href="good\ppt_good2011.rar">ppt的优秀作业</a>
+								<li>
+									本届几份<a href="good\ppt_good2012.rar">ppt的优秀作业</a>
+								<li>
+									本届几份<a href="good\word_good2012.rar">word的优秀作业</a>
+								</li>
+							</ul>
+						</TD>
+						<td width="404">
+							<UL>
+								<LI>
+								了解计算机中的数、信息的表达、计算机语言与软件系统等概念
+								<LI>
+								数的概念是不是有些难，借助于附件中的“计算器”来算一算。
+								<LI>
+								使用资源管理器：管理文件夹及文件（新建、更名、删除、移动、复制）
+								<LI>
+									<P>不妨做做书中的习题</P>
+								</LI>
+							</UL>
+							<P><STRONG><FONT color="#ff0000">要提交的作业-7:</FONT></STRONG> <A href="XiTi\Os-file.doc">按此要求进行操作</A>
+							</P>
+						</td>
+						<td width="587">
+							<P>卢1.1， 1.2.13<BR>
+								谢3.1-3.4<BR>
+							</P>
+							<P>卢3.1-3.5<BR>
+								谢3.5</P>
+						</td>
+					</tr>
+					<tr>
+						<td width="27">&nbsp;13</td>
+						<td width="44">12.4</td>
+						<td width="245"><A href="excel.ppt">同上</A></td>
+						<TD width="342">&nbsp;</TD>
+						<td width="404"></td>
+						<td width="587"></td>
+					</tr>
+					<TR>
+						<td width="27">14</td>
+						<td width="44">12.11</td>
+						<td width="245">
+							<P><A href="html.ppt">网页制作&nbsp;</A></P>
+							<P><A href="mm.ppt">多媒体</A></P>
+							<P><FONT color="#ff3399"><STRONG></STRONG></FONT>&nbsp;</P>
+							<P>&nbsp;</P>
+						</td>
+						<TD width="342">
+							<ul>
+								<LI>
+									<A href="ShiLi-html\Personal.htm">掌握：文图表链基本示例</A>(打开网页点右键查看源文件)
+								<LI>
+									<A href="ZiLiao\HTML_tags.txt">常用html标记</A>
+								<LI>
+									<A href="ZiLiao\html40.zip">html4.0规范</A>
+								<LI>
+									<A href="ZiLiao\css2.chm">Cascading Style Sheet 2.0 中文手册</A>
+								<LI>
+									<A href="ShiLi-html">示例</A>(打开任一网页点右键查看源文件)
+								<li>
+									<A onclick="return openlink(this,10)" href="Media\mm_DigitCamera_F0232.avi">数字相机</A></li></ul>
+						</TD>
+						<td width="404">
+							<P><FONT color="#ff0000"><FONT color="#000000">掌握常用的Html标记,练习使用EditPlus(或UltraEdit)及FrontPage<BR>
+									</FONT></FONT>&nbsp;
+								<br>
+							</P>
+							<p>参照讲义ppt或者通过网上搜索查找有关多媒体的软件并试用之</p>
+							<P><FONT color="#ff0000"><STRONG>要提交的作业-8: </STRONG></FONT><FONT color="#000000">自己确定一个主题制作一个或几个网页文件，网页中要体现文、图、表、链。其中使用p,br,font,table,img,a等标签<STRONG>(可下周提交）。</STRONG></FONT>
+								<br>
+								(最方便的是使用EditPlus或UltraEdit，也可以使用记事本，但要注意保存时文件的扩展名是.htm或.html)
+								<br>
+								可以参考<a href="./ShiLi-html">示例</a>，也可以打开任意网站的网页，查看其源文件进行学习。
+							</P>
+							<p>特别推荐几份<a href="good\excel_good2009.rar">Excel的优秀作业(上上届)</a> &nbsp;<a href="good\excel_good2011.rar">Excel的优秀作业(上届)</a></p>
+						</td>
+						<td width="587">谢7.1-7.5</td>
+					</TR>
+					</tr>
+					<tr>
+						<td width="27" height="153">16</td>
+						<td width="44" height="153">12.18</td>
+						<td width="245" height="153">
+							<P><A href="winset.ppt">计算机的维护&nbsp;</A></P>
+							及<br>
+							<P><A href="vir.ppt">计算机病毒的防治&nbsp;</A></P>
+						</td>
+						<TD width="342" height="153"><!--<A href="Media\_expert_system_f1215.avi">专家系统</A>-->
+							&nbsp;
+							<UL>
+								<li>
+									<a href="ZiLiao\reg.rar">注册表知识</a>
+								<li>
+									<a href="ZiLiao\bios.rar">BIOS CMOS设置模拟</a>
+								<li>
+									<a href="ZiLiao\fdisk.rar">磁盘分区模拟</a>
+								<li>
+									<a href="http://www.tudou.com/programs/view/IIt3opGxWUw/">安装系统（link)</a>
+								<li>
+									<a href="http://www.tudou.com/programs/view/zjKZCCaIfHk/">安装系统（使用ghost光盘)(link)</a>
+								<li>
+									<a href="http://www.tudou.com/programs/view/92pFGkuH7HY/">分区及安装系统(link)</a>
+								<li>
+									<A href="Media\_vir_f0900.avi">计算机病毒</A> 
+									<!--li>
+									<a href="ZiLiao\DOS.rar">DOS命令行知识</a-->
+								</li>
+							</UL>
+						</TD>
+						<td width="404" height="153">
+							<LI>
+							使用桌面/任务栏/快速启动栏/我的电脑/我的文档
+							<LI>
+							了解Windows中的DOS
+							<LI>
+							了解计算机软件/硬件维护的基本知识
+							<LI>
+							了解计算机病毒的知识及其防范措施
+							<LI>
+								<FONT color="#ff0000"><FONT color="#000000">复习相关的概念并答疑</FONT><BR>
+								</FONT><!--&nbsp; 时间：23日<STRONG><FONT color="#ff0000">周六</FONT></STRONG>下午<STRONG><FONT color="#ff0000">3:00-4:30</FONT></STRONG>,<BR>
+								&nbsp; 地点：理科1号楼二层<STRONG><FONT color="#ff0000">1235</FONT></STRONG>N。
+								<BR>
+								&nbsp; 方法：记住<FONT color="#ff0000">账号及座号</FONT>（<A href="sjzh.xls">见此</A>），登录后，<BR>
+								&nbsp;&nbsp;题目放在<FONT color="#ff0000">Y:盘</FONT>，做完后<FONT color="#ff0000">存到Z：盘。<BR>
+									&nbsp; 要注意文件名。</FONT><FONT color="#000000"><A href="sjxz.doc">见此</A></FONT>-->
+								<p>特别推荐<a href="good\good2009_7.rar">7号机房优秀作业（部分)</a></p>
+							</LI>
+						</td>
+						<td width="587" height="153">
+							<P>卢3.5，9.1-9.4</P>
+							<P>谢8.1-8.5</P>
+							<P>卢1.3</P>
+							<P>&nbsp;</P>
+						</td>
+					</tr>
+					<TR>
+						<TD width="27">17<a name="w17"></a></TD>
+						<TD width="44">12.25</TD>
+						<TD width="245">
+							<P>&nbsp;<A href="review.ppt">复习&nbsp;</A></P>
+							<P><A href="dagang_zhishidian.doc">大纲及知识点</A></P>
+							<P><A href="timu.doc">题目形式（注：不代表题目的重点）</A></P>
+							<P><A href="dasai.pptx">北京大学计算机设计大赛介绍</A></P>
+						</TD>
+						<TD width="342">
+							<ul>
+								<li>
+								<li>
+									<A href="review.jpg">知识点结构图</A>
+								<li>
+								</li>
+							</ul>
+						</TD>
+						<TD width="404">
+							<P>&nbsp;</P>
+							<P><STRONG><FONT color="#ff0000">该周有上机考试</FONT></STRONG>(就是上机课的时间 ）</P>
+							-
+							<P></P>
+							<P>&nbsp; &nbsp; &nbsp; &nbsp;<a href="http://ai.pku.edu.cn/wkjsj/">进入 
+									http://ai.pku.edu.cn/wkjsj/</a></P>
+							<P>注意:<br>
+								1. 每次进入时要<font color="red">选对老师</font>，文件解压到<b>E：盘</b><br>
+								2. 每个文件做完，先保存到相应目录下，注意文件名要按要求。<br>
+								3. <b>每个文件都要上传到 到上面的网址</b>（http://ai.pku.edu.cn/wkjsj/）
+								<br>
+								（<b><font color="red">不要</font></b>传到平时作业的ftp网址!)</B><br>
+								(只上传你做的结果文件，其他文件不要上传）。<br>
+								4. <b>请掌握好时间(先易后难）</b>。总时间是90分钟。<br>
+							</P>
+							<P>考试内容四道题（都是有具体要求的题目，一般提供好了素材）：<BR>
+								1. Word1（文字、段落格式、插入符号、分栏、边框、填充、表格、图文混排等）<BR>
+								2. Word2 （长文档：大纲，目录，样式的建立与应用，题注与交叉引用，脚注、尾注、索引，项目符号与编号，页面设置、页眉页脚、页码，查找替换，修订、批注等）<BR>
+								3. ppt 
+								(内容、文字、表格、图片，版式、配色方案、背景图案，模板、母板，图形对象的前后关系与组合，对象的自定义动画及其激发方式、顺序，幻灯片的片间切换等）<BR>
+								4. 
+								Excel(数据填充、选择性粘贴，文字格式、数值格式、边框格式、条件格式，常用函数、公式、绝对引用与相对引用，图表、饼图及柱状图，排序，筛选，分类汇总等）<BR>
+							</P>
+						</TD>
+						<TD width="587"></TD>
+					</TR>
+					<tr bgColor="#ffdfdf">
+						<td width="27">&nbsp;<a name="w17"></a></td>
+						<td width="44">&nbsp;</td>
+						<td width="245">笔试2014年1月4日8:30-10:00, <!--font color="red">地点二教109、302</font>（任选一间教室均可）-->
+						</td>
+						<TD width="342">
+							<!--安排答疑：2013年1月15日 下午2:00-4:00 地点 理科一号楼二层1223-->
+						</TD>
+						<td width="404"><!--注：期末成绩占60%,平时作业占40%&nbsp;--></td>
+						<td width="587">&nbsp;</td>
+					</tr>
+					<tr>
+						<td width="27">&nbsp;</td>
+						<td width="46">&nbsp;</td>
+						<td width="245">&nbsp;</td>
+						<TD width="342">&nbsp;</TD>
+						<td width="404">&nbsp;</td>
+						<td width="587">&nbsp;&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<td width="27">&nbsp;</td>
+						<td width="46">&nbsp;</td>
+						<td width="245">&nbsp;</td>
+						<TD width="342">&nbsp;</TD>
+						<td width="404">&nbsp;</td>
+						<td width="587">&nbsp;</td>
+					</tr>
+				</table>
+			</P>
+			<p>附： <a href="software/office2003.rar">office2003绿色<a> &nbsp; <a href="software/office2007.rar">
+							office2007绿色<a>
+								<br>
+			</p>
+		</center>
+		</FONT>
+		<SCRIPT language="JavaScript">
+<!--
+
+function ReplaceHref()
+{
+	var href_sufix  = "902_";
+
+	for( var i=0; i<document.links.length; i++ )
+	{
+		var hre = document.links[i].href;
+		var pos = hre.lastIndexOf("\\");
+		if( pos < 0 ) pos = hre.lastIndexOf("\/");
+		if(pos>=0) hre = hre.substring( pos + 1);
+		document.links[i].href = href_sufix + hre;
+		alert( document.links[i].href );
+	}
+}
+//if( document.location.href.indexOf("162.105.14.139") >= 0 ) ReplaceHref();
+//-->
+		</SCRIPT>
+		</A>
+	</body>
+</html>
